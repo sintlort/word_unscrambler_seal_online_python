@@ -3,7 +3,7 @@ def RemoveFromList(thelist, val):
 
 def GetDic():
     try:
-        dicopen = open("DL.txt", "r")
+        dicopen = open("cleanedWordsDictionary.txt", "r")
         dicraw = dicopen.read()
         dicopen.close()
         diclist = dicraw.split("\n")
@@ -57,15 +57,11 @@ while True:
     if tp == 'Word Not in Dictionary.':
         if input('Would you like to add it? [y/n]') == 'y' or input('Would you like to add it? [y/n]') == 'Y':
             wta = str(input('What is the word you would like to add? '))
-            dicopen = open("DL.txt", "a")
+            dicopen = open("cleanedWordsDictionary.txt", "a")
             dicopen.write('\n')
             dicopen.write(wta)
             dicopen.close()
             d = GetDic()
             ind = Ints2Dic(d)
             print('Dictionary Updated')
-    if input('Restart? [y/n]') == 'y' or input('Restart? [y/n]') == 'Y':
-        pass
-    else:
-        break
 
