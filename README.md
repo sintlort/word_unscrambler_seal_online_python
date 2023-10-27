@@ -1,6 +1,9 @@
 # Word-Unscrambler
 This python program outputs a list of the possible options a scrambled word could be.
 
+This python program is forked from https://github.com/tinmarr/word_unscrambler, used for education purposes.
+Words Dictionary is obtained through data scrapping on sealonline.fandom.com
+
 ![Demo Gif](ezgif.com-gif-maker.gif)
 
 ## About 
